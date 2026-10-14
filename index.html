@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Battle Mage: Dragonflight privacy policy draft, contact information, and Android release verification status.">
-  <title>Battle Mage: Dragonflight — Privacy Policy Draft</title>
+  <meta name="description" content="Privacy policy for Battle Mage: Dragonflight by Suncat: local game saves, Android backups, permissions, deletion, and support contact.">
+  <title>Battle Mage: Dragonflight — Privacy Policy</title>
   <style>
     :root { color-scheme: light; }
     body { max-width: 760px; margin: 40px auto; padding: 0 24px 32px; font: 17px/1.65 system-ui, sans-serif; color: #17212a; background: #fff; }
@@ -13,62 +13,89 @@
     h2 { margin-top: 1.8em; font-size: 1.35rem; }
     a { color: #174d8c; overflow-wrap: anywhere; }
     a:focus-visible { outline: 3px solid #174d8c; outline-offset: 3px; }
-    .draft { padding: 16px; background: #fff2ce; border-left: 4px solid #946000; }
     .meta { color: #46535e; }
     @media (max-width: 480px) { body { margin-top: 24px; padding-inline: 18px; } h1 { font-size: 1.7rem; } }
   </style>
 </head>
 <body>
 <main>
-  <p class="draft"><strong>Draft — Android release verification is still required.</strong>
-    The HTML game source was reviewed on October 14, 2026. The Android release package has not yet been verified.
-    This page is not a finalized Google Play privacy policy. Remove this notice only after the Android build has been checked and the policy matches it.</p>
-
   <h1>Battle Mage: Dragonflight Privacy Policy</h1>
   <p class="meta">Developer: Suncat<br>
-    Original draft date: October 10, 2026<br>
-    Last reviewed: October 14, 2026</p>
+    Effective date: October 14, 2026<br>
+    Applies to: Android release 1.0</p>
 
-  <h2>Scope of this draft</h2>
-  <p>This draft describes the reviewed standalone HTML game, version 0.30.11.
-    It does not establish the behavior of an Android wrapper or the version distributed through Google Play.
-    The Android permissions, backup configuration, native libraries, network behavior, and correspondence with the released game remain unverified.</p>
+  <p>Battle Mage: Dragonflight is an offline, single-player game. You do not need an account or sign-in to play.
+    This policy explains what the game saves, how Android backups may affect that data, and how to contact Suncat.</p>
 
-  <h2>Information handled by the game</h2>
-  <p>The reviewed HTML game saves preferences, best score, campaign checkpoints, and recent in-game upgrade offers locally using browser storage.
-    Preferences include sound, graphics, controls, difficulty, and accessibility settings. Checkpoints contain game progress and character state so you can continue your adventure.</p>
-  <p>The reviewed HTML game does not require an account. No game-specific code that uploads saved progress, collects personal information or device identifiers, or integrates advertising, analytics, or remote crash reporting was identified.
-    These findings apply to the inspected HTML source; they are not confirmation that the Android release contains no additional services.</p>
+  <h2>Information saved on your device</h2>
+  <p>The game saves your preferences, best score, campaign checkpoints, and recent in-game upgrade offers in the app's local storage.
+    Preferences include difficulty, sound, graphics, controls, and the gentle-effects setting. Checkpoints contain game progress and character state.
+    This information lets the game remember your settings and continue your adventure.</p>
+  <p>The game does not ask you to provide personal information. Suncat does not receive your save files, gameplay history, or personal or device identifiers through gameplay.</p>
 
-  <h2>Network communication and external services</h2>
-  <p>The reviewed HTML includes its game engine and audio assets within the file. No game-specific network requests or remotely loaded assets were identified.
-    Optional links in Suncat's studio lead to Suncat's music website and Instagram. Opening those links visits external websites with their own privacy practices.</p>
-  <p>This policy page is hosted on GitHub Pages. Visiting it is separate from playing the local game and is subject to
-    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>.</p>
+  <h2>Permissions and network communication</h2>
+  <p>Android release 1.0 does not request Internet, camera, microphone, location, contacts, or shared-storage permissions.
+    Its game content, graphics engine, and audio are included in the app and loaded locally. The game does not upload progress to a Suncat server.</p>
+  <p>The Android app blocks navigation to external websites. The game content contains optional music-site and Instagram links, but those links do not establish an online service used by this Android release.
+    If you visit those websites separately, their privacy policies apply.</p>
 
-  <h2>Storage, backups, retention, and deletion</h2>
-  <p>The reviewed game keeps its saved progress and preferences in local storage until that storage is cleared or replaced.
-    For the browser version, use the browser's controls to clear the game's site data.</p>
-  <p>In an Android app, you can clear app storage through Android settings. Uninstalling removes local app storage.
-    Android or your device provider may back up or transfer eligible app data, depending on the app's configuration, operating system, and device settings.
-    Dragonflight's Android backup configuration has not yet been verified. Clearing local storage or uninstalling an app does not necessarily delete an existing backup, and a backup may restore data when the app is reinstalled or transferred.</p>
+  <h2>Advertising, analytics, and platform services</h2>
+  <p>The game does not integrate advertising, analytics, or developer-operated remote crash reporting.
+    It does not sell gameplay data or send it to advertisers.</p>
+  <p>The app uses Android's WebView and support libraries to run the local game.
+    Google Play handles app distribution and updates separately, under
+    <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
+    Android backup services are described below.</p>
 
-  <h2>Contact</h2>
-  <p>For privacy questions or a request to delete information you have sent directly to Suncat, email
-    <a href="mailto:suncat.data@gmail.com">suncat.data@gmail.com</a>.</p>
-  <p>If you contact Suncat by email, your email address and the information you choose to include are received as support correspondence. Avoid including unnecessary sensitive information.</p>
+  <h2>Android backups and device transfers</h2>
+  <p>This release allows Android backup and does not exclude game data through custom backup rules.
+    Depending on your Android version, device provider, backup settings, and system eligibility rules, app data may be backed up to your Google account or another device-provider backup service, or transferred to a new device.</p>
+  <p>These backups and transfers are performed by the operating system or device provider, separately from the game's offline operation.
+    Suncat does not operate the backup service or receive its backup copies. Backup security, retention, restoration, and deletion follow the relevant provider's settings and policies.</p>
 
-  <h2>Updates</h2>
-  <p>This draft must be reviewed against the Android release before it is finalized. Any later changes to the game's data handling must be reflected in this policy.</p>
+  <h2>Storage, retention, and deletion</h2>
+  <p>Game saves remain in the app's local storage until they are replaced or cleared.
+    To delete them, open Android Settings, select Apps, select Dragonflight, then choose Storage or Storage &amp; cache and Clear storage or Clear data.
+    Menu names vary by device. This removes saved progress and preferences. Uninstalling also removes the app's local storage.</p>
+  <p>Deleting local data or uninstalling does not necessarily remove an existing system backup.
+    A backup may restore app data after reinstallation or a device transfer. Use your device's or backup provider's controls to manage those copies.</p>
+  <p>The game uses app-local storage rather than a developer-hosted save database. Its Android wrapper also disables direct WebView access to device files and content providers.</p>
+
+  <h2>Support and privacy questions</h2>
+  <p>Contact Suncat at <a href="mailto:suncat.data@gmail.com">suncat.data@gmail.com</a>.</p>
+  <p>If you email Suncat, your email address, message, and any attachments you choose to send are received through Gmail so your inquiry can be read and answered.
+    This correspondence is separate from game data and remains in the support mailbox until deleted.
+    You can request deletion by emailing the same address. Clearing the game or uninstalling it does not delete email correspondence.
+    Gmail's handling of email is covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+  <h2>This policy website</h2>
+  <p>This page is hosted on GitHub Pages. Visiting it makes a web request to GitHub, which may process technical information such as your IP address under
+    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>.
+    This page contains no added analytics scripts, advertising scripts, or tracking cookies.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>Updates will be published on this page with a revised effective date. If a future release changes how information is handled, this policy will be updated to describe those changes.</p>
 </main>
-<!-- Review evidence, 2026-10-14:
-HTML: BattleMage-Dragonflight(2).html, v0.30.11.
-SHA-256: 7b2385cfef395b06b47c1c042b2d4be8807cc33aeb5afda730094ee827d72a67.
-Static source inspection only; no Android runtime or merged-manifest verification.
-Available Android project ZIP was truncated in its first assets/index.html entry;
-no complete Android manifest, backup rules, native source or dependencies could be inspected.
-Standalone AutoBard manifest/activity files were excluded because they are a different application.
-No game files were changed.
+<!-- Release verification, 2026-10-14:
+Package: com.suncat.dragonflight; versionName 1.0; versionCode 1.
+Inspected AAB SHA-256: 276fb6333da5df99301f5fc72929920024acaf31df59d7ebbcbbeff84c563483.
+Bundled HTML: v0.28.0; SHA-256 93225f3b9c74e04db612b5b4a574d6da723222137fb2c1a77199c6b940752674.
+Checked merged base manifest, both backup XML resources, dependency metadata,
+all four DEX class inventories, app-specific bytecode, native-library inventory,
+and the bundled HTML source. This was static release inspection, not an Android device traffic capture.
+Only uses-permission: app-defined signature DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION.
+No Internet, camera, microphone, location, contacts, storage, or advertising-ID permission.
+allowBackup=true; full-backup-content empty; data-extraction-rules has empty cloud-backup.
+MainActivity loads bundled /assets/index.html through WebViewAssetLoader;
+DOM storage enabled; file/content access disabled; non-local navigation blocked.
+CameraX, Play Services location/base, OkHttp/Retrofit and other support dependencies are present;
+no app-specific activation of camera/location/network clients was found.
+Three Firebase exception/helper classes are present, not Firebase Analytics/Crashlytics initialization.
+No in-app privacy-policy text/link was identified in this release.
+Remaining checks outside this publication: add in-app policy access in the Android project;
+confirm the URL entered in Play Console and that its active release is this inspected bundle.
+Actual backup/restore behavior depends on Android/device settings and was not exercised.
+The uploaded bundle and game files were not modified.
 -->
 </body>
 </html>
